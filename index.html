@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>State Population Finder</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header><p class="eyebrow">2024 U.S. Census estimates</p><h1>State Population Finder</h1><p>Search and compare 20 U.S. states.</p></header>
+    <label for="search">Search by state</label>
+    <input id="search" type="search" placeholder="e.g., Florida" autocomplete="off">
+    <label for="sort">Sort results</label>
+    <select id="sort"><option value="name">State name (A–Z)</option><option value="high">Population (high to low)</option><option value="low">Population (low to high)</option></select>
+    <p id="status" role="status">Loading population data…</p>
+    <ul id="results" aria-label="State populations"></ul>
+    <footer>Source: U.S. Census Bureau, 2024 population estimates. Demo includes 20 states.</footer>
+  </main>
+</body>
+</html>
